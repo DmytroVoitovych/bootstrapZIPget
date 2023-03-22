@@ -37,7 +37,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .footer {
   display: flex;
   justify-content: center;
@@ -45,20 +45,24 @@ export default {
   height: 100px;
   background-color: #f7f7f7;
   z-index: 0;
-  // transition: opacity 350ms;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .footer {
     min-width: 1200px;
     height: 77px;
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .footer {
     min-width: 100%;
     height: 79px;
   }
+}
 
-  @media screen and (min-width: 260px) and (max-width: 340px) {
-    //    min-width: 768px;
+@media screen and (min-width: 260px) and (max-width: 340px) {
+  .footer {
     height: auto;
     padding: 40px 0;
     min-width: 100%;
@@ -75,16 +79,22 @@ export default {
   font-size: 16px;
   color: #545454;
   min-width: 320px;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .footer-block {
     min-width: 1200px;
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .footer-block {
     min-width: 100%;
   }
+}
 
-  @media screen and (min-width: 260px) and (max-width: 340px) {
+@media screen and (min-width: 260px) and (max-width: 340px) {
+  .footer-block {
     min-width: 100%;
   }
 }
@@ -93,16 +103,15 @@ export default {
   margin-left: 5px;
   margin-right: 5px;
   color: #20c997;
-
-  &:nth-child(3) {
-    margin: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-left: 1.5px solid #545454;
-    border-right: 1.5px solid #545454;
-  }
 }
 
+.footer__items:nth-child(3) {
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1.5px solid #545454;
+  border-right: 1.5px solid #545454;
+}
 .footer__haert {
   fill: rgb(255, 107, 8);
   width: 14px;
@@ -116,18 +125,18 @@ export default {
   -webkit-animation: mymove 3s infinite;
   /* Safari 4.0 - 8.0 */
   animation: mymove 3s infinite;
+}
 
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes mymove {
-    30% {
-      box-shadow: 0px 15px 15px rgba(255, 170, 114, 1);
-    }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  30% {
+    box-shadow: 0px 15px 15px rgba(255, 170, 114, 1);
   }
+}
 
-  @keyframes mymove {
-    30% {
-      box-shadow: 0px 15px 15px rgba(255, 170, 114, 1);
-    }
+@keyframes mymove {
+  30% {
+    box-shadow: 0px 15px 15px rgba(255, 170, 114, 1);
   }
 }
 </style>
